@@ -1,16 +1,17 @@
 import { useEffect, useState } from 'react'
-import { getStarshipList } from '../../services/sw-api'
+import { getAllStarships } from '../../services/sw-api'
 import { Link } from 'react-router-dom'
 
 const StarshipList = () => {
-  const [StarshipList, setStarshipList] = useState([])
+  const [starships, setStarships] = useState([])
 
   useEffect(() => {
-    const fetchStarshipList = async () => {
-      const starshipData = await getStarshipList()
-      setStarshipList(starshipData.results)
+    const fetchStarshipData = async () => {
+      const starshipData = await getAllStarships()
+      setStarships(starshipData.results)
+      console.log(starshipData)
     }
-    fetchStarshipList()
+    fetchStarshipData()
   }, [])
   
   return (
