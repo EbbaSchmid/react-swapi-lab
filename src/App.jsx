@@ -1,18 +1,18 @@
 import './App.css';
 import { Route, Routes } from 'react-router-dom';
-
-
+import NavBar from './components/NavBar/NavBar';
+import Starship from './pages/StarshipPage/StarshipPage';
+import StarshipList from './pages/StarshipList/StarshipList'
 
 
 function App() {
   return (
     <>
     <Routes>
-      <Route>
-        
-      </Route>
-
-
+      <Route 
+        path='/starship-page' 
+        element={<StarshipPage />} 
+      />
 
     </Routes>
     </>
@@ -20,3 +20,4 @@ function App() {
 }
 
 
+export default App;

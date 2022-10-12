@@ -4,7 +4,7 @@ const NavBar = () => {
   return (
     <header className="App-header">
 
-      {/* <Link to="/class-list">Class List</Link> */}
+    <Link to="/starship-page">Starship Page</Link> 
 
     
     </header>
