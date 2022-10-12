@@ -22,7 +22,7 @@ const StarshipList = () => {
         {StarshipList.map(starship => 
           <div key={starship.index}>
             <Link 
-            to="/starship" 
+            to="/starships" 
             state={{starship}}>
             {starship.name}</Link>
             <br/>
