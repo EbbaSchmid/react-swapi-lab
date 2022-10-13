@@ -18,8 +18,20 @@ const StarshipPage = () => {
   return (
     
       <div>
+        {StarshipDetails.name ?
+        <>
           <h4>Name: {StarshipDetails.name}</h4>
           <h4>Model: {StarshipDetails.model}</h4>
+          <Link
+            to="/">
+            <p>RETURN</p>
+          </Link>
+        </>
+        :
+        <>
+          <p>Still Loading</p>
+        </>
+        }
       </div>
   );
 }

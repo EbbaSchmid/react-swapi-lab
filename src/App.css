@@ -28,6 +28,48 @@
   color: #61dafb;
 }
 
+.starship-list-container {
+  border: 1px solid darkgreen;
+  display: flex;
+  flex-direction: row;
+  
+  width: 150px;
+  height: 100px;
+  justify-content: space-between;
+  margin: 30px 30px 30px 30px;
+  align-items: center;
+  background-color: darkgreen;
+  align-content: center;
+  justify-items: center;
+  
+}
+
+a:link {
+  color:white;
+}
+
+a:visited {
+  color:white;
+  font-weight: bold;
+}
+
+a:active {
+color:white;
+}
+
+.Nav-Bar{
+  background-color: black;
+  color: white
+}
+
+
+
+
+
+
+
+
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -37,15 +79,3 @@
   }
 }
 
-
-.details-container{
-  font-size: 32px;
-  color: blue;
-  background-color: chartreuse;
-}
-
-.starship-container{
-  font-size: 32px;
-  color: blue;
-  background-color: chartreuse;
-}

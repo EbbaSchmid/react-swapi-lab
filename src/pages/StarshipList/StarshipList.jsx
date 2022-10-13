@@ -19,7 +19,8 @@ const StarshipList = (props) => {
           {starships.length ?
           <>
             {starships.map(starship => 
-              <div key={starship.model}>
+              <div key={starship.model}
+              className="starship-list-container">
               <Link 
                 to="/starship" 
                 state={{ starship }}>
