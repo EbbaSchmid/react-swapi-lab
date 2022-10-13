@@ -1,6 +1,5 @@
 import './App.css';
 import { Route, Routes } from 'react-router-dom';
-import NavBar from './components/NavBar/NavBar';
 import StarshipPage from './pages/StarshipPage/StarshipPage';
 import StarshipList from './pages/StarshipList/StarshipList';
 
@@ -8,7 +7,7 @@ import StarshipList from './pages/StarshipList/StarshipList';
 function App() {
   return (
     <>
-    
+
     <Routes>
 
       <Route 
@@ -20,6 +19,7 @@ function App() {
       element={<StarshipPage/>}/>
 
     </Routes>
+
     </>
   );
 }
