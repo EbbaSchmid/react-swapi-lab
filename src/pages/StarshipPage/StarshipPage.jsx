@@ -8,28 +8,27 @@ const StarshipPage = (props) => {
   const location = useLocation()
 
 	useEffect(() => {
-    const fetchStarshipDetails = async () => {
+    const fetchDetails = async () => {
       const starshipData = await getDetails(location.state.starship.url)
       setStarshipDetails(starshipData)
     }
-    fetchStarshipDetails()
+    fetchDetails()
   }, [location.state.starship.url])
   
   return (
     <>
-      <h3>Starship Details</h3>
-      {starshipDetails.name ?
-        <div className="details-container">
-          <div className="detail-div">
-            <h4>Name: {StarshipDetails.name}</h4>
-            <h4>Model: {StarshipDetails.model}</h4>
-          </div>
-        </div>
+      <div>
+      {StarshipDetails.name ?
+        <>
+          <h4>Name: {StarshipDetails.name}</h4>
+          <h4>Model: {StarshipDetails.model}</h4>
+        </>
         :
         <>
-          <h3> Loading Starship Details</h3>
+          <p> Loading Starship Details</p>
         </>
       }
+      </div>
     </>
   );
 }
