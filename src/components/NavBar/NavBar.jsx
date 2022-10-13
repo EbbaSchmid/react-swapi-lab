@@ -10,6 +10,8 @@ const NavBar = () => {
         alt="logo"
       />
       <Link to="/Starship-list">Starship List</Link>
+      <Link to="/Starship-page">Starship Details</Link>
+
     </header>
   )
 }

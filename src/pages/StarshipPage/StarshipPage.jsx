@@ -3,7 +3,7 @@ import { getDetails } from '../../services/sw-api';
 import { useLocation } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 
-const StarshipPage = () => {
+const StarshipPage = (props) => {
   const [StarshipDetails, setStarshipDetails] = useState({})
   const location = useLocation()
 

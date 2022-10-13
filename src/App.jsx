@@ -8,19 +8,13 @@ import StarshipsList from './pages/StarshipsList/StarshipsList';
 function App() {
   return (
     <>
-    <NavBar />
+    <NavBar/>
     <Routes>
-      <Route 
-        path='/starship-page' 
-        element={<StarshipPage />} 
-      />
-    <Route 
-        path='/starships-list' 
-        element={<StarshipsList />} 
-      />
+      <Route path='/starship-page' element={<StarshipPage/>}/>
+      <Route path='' element={<StarshipsList/>}/>
     </Routes>
     </>
-  )
+  );
 }
 
 
