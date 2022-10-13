@@ -36,3 +36,10 @@
     transform: rotate(360deg);
   }
 }
+
+
+.detailsContainer{
+  font-size: 32px;
+  color: blue;
+  background-color: chartreuse;
+}
