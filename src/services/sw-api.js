@@ -1,4 +1,4 @@
-const baseUrl = "https://swapi.dev/api"
+const baseUrl = "https://swapi.dev/api/"
 
 export async function getAllStarships() {
   const res = await fetch (`${baseUrl}/starships`)
@@ -6,6 +6,6 @@ export async function getAllStarships() {
 }
 
 export async function getStarshipDetails(apiUrl) {
-  const res = await fetch(`${baseUrl}${apiUrl}`)
+  const res = await fetch(`${apiUrl}`)
   return res.json()
 }
