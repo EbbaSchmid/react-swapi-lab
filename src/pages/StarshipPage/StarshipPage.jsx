@@ -16,13 +16,11 @@ const StarshipPage = (props) => {
   }, [location.state.starship.url])
   
   return (
-      <>
-      {StarshipDetails.name ?
+    <>
+      <h3>Starship Details</h3>
+      { StarshipDetails.name ?
         <div className="detailsContainer">
           <div className="shipDetail-div">
-
-            <h3>Starship Details</h3>
-
             <h4>Name: {StarshipDetails.name}</h4>
             <h4>Model: {StarshipDetails.model}</h4>
           </div>
@@ -32,7 +30,7 @@ const StarshipPage = (props) => {
           <h3> Loading Starship Details</h3>
         </>
       }
-      </>
+    </>
   );
 }
 
