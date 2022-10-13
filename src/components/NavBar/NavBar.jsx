@@ -9,7 +9,7 @@ const NavBar = () => {
         className="App-logo"
         alt="logo"
       />
-      <Link to="/Starship-list">Starship List</Link>
+      <Link to="/Starship-list">Starships List</Link>
       <Link to="/Starship-page">Starship Details</Link>
 
     </header>

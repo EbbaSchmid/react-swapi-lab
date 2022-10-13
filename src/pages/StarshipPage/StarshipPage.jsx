@@ -18,9 +18,9 @@ const StarshipPage = (props) => {
   return (
     <>
       <h3>Starship Details</h3>
-      { StarshipDetails.name ?
-        <div className="detailsContainer">
-          <div className="shipDetail-div">
+      {starshipDetails.name ?
+        <div className="details-container">
+          <div className="detail-div">
             <h4>Name: {StarshipDetails.name}</h4>
             <h4>Model: {StarshipDetails.model}</h4>
           </div>
