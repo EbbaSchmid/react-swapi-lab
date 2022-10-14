@@ -28,38 +28,53 @@
   color: #61dafb;
 }
 
-.starship-list-container {
-  border: 1px solid darkgreen;
+.starship-container {
+  text-align: center;
+  padding: 30px;
+  height: 120px;
+  width: 300px;
+}
+
+.starship-list-div {
   display: flex;
-  flex-direction: row;
-  
-  width: 150px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 30px; 
+  gap: 50px;
+}
+
+.starship-details-container{
+  border: 1px solid #033D42;
+  background-color: #033D42;
+  position: relative;
+  padding: 20px;
+  color: white;
+  width: 400px;
+  margin: 150px;
+}
+
+a {
+  color:white
+}
+
+
+
+
+button {
+  background-color: #033515;
+  color: white;
+  padding: 30px;
   height: 100px;
-  justify-content: space-between;
-  margin: 30px 30px 30px 30px;
-  align-items: center;
-  background-color: darkgreen;
-  align-content: center;
-  justify-items: center;
-  
+  font-size: 30px;
+  width: 300px;
 }
 
-a:link {
-  color:white;
-}
-
-a:visited {
-  color:white;
-  font-weight: bold;
-}
-
-a:active {
-color:white;
-}
-
-.Nav-Bar{
+.Nav-Bar {
   background-color: black;
-  color: white
+  display: flex;
+  color: white;
+  justify-content: center;
+
 }
 
 

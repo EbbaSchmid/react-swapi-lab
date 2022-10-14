@@ -15,28 +15,26 @@ const StarshipList = (props) => {
   
     return (
       <>
-        <h3>Starships</h3>
-          {starships.length ?
-          <>
-            {starships.map(starship => 
-              <div key={starship.model}
-              className="starship-list-container">
-              <Link 
-                to="/starship" 
-                state={{ starship }}>
-                {starship.name}
-                </Link>
-
-              </div>
-            )}
-          </>
-            :
-            <>
-            <h5>Still Loading</h5>
-            </>
-            }
-            </>
-    );
+      <div>
+        <div className="starship-list-div">
+    
+      {starships.map(starship =>
+      <div key={starship.name}> 
+        <Link 
+          className="starship-container"
+          to='/starship'
+          state={{ starship }}
+        >
+          <button>
+          {starship.name}
+          </button>
+        </Link>
+      </div>
+        )}
+        </div>
+      </div>
+    </>
+  )
 }
 
 export default StarshipList;
